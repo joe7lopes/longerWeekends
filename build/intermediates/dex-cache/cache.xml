@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_f8686f2871b823ce873dd846d7f10741ca2cd028/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_aeba2f2fb8470f067bea36f4022cd302e07a9bc5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_c5c3d038c711b38b0231d73e99e1809cc15ee99f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_3961d8f1c3266415f61ed67dffa35311e2cc2d34/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e7213e76566c1775fc9eb91a9fd6c3a27d9c5688/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="07a09a358a140ab82f41013cab98700f99e296f1">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_e84689a6f125264fd037dd99b7b86905d7067f7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_2af56fea9c7b0d466298e8cdd4fe96a99eb358e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_ad3e461a01d7da433c43a7ae9461d627f844583b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/.gradle/caches/modules-2/files-2.1/com.darwinsys/hirondelle-date4j/1.5.1/7b52de513f87ae4d9ff5d17518def0a1e9bc3df0/hirondelle-date4j-1.5.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7b52de513f87ae4d9ff5d17518def0a1e9bc3df0">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/hirondelle-date4j-1.5.1_b67b6d75e695f638666f6ea5078fa472bd6c4d44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="3bad0b42e2cf780c465153c5170f67f2519cdd70">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_05f640cea707df783e16038c491a1b8419cacb05/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9bb5a32a84fc30bfc772860959c361c64d86e3e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_e460bd08842d8b5f6997409bcb6913b4723ffcad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_e4aec8b9307d6c45ff646ee1dcce1f164e5c313a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f14a80ffaf9658d5426fb9a50ef39d276409cdf5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_b7e5525c447ea81e629b03f8396d82e0624e0b6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_1dc67fc104572ef4d9584ab4af52c93b678bbf75/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.roomorama/caldroid/3.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fea01abd91186a7148aaaf8c517b823eedaac79a">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.roomorama-caldroid-3.0.1_71d114ecbdfbc69ac01086c71fad936f2ddeaed6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_7a5c7dccf32e9ce93a9b3b6b6f82d15275c9d8cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/joe/Development/longerWeekends/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/joe/Development/longerWeekends/android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_33a91b726c1188e514182907c1c25b9af9c46e49/classes.dex" />
+    </item>
+
+</items>
