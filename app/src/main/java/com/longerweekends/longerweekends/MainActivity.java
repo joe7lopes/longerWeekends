@@ -39,9 +39,10 @@ public class MainActivity extends AppCompatActivity {
 
                 //TODO, create a leave processor which will draw, register the date and check for repeated date.
 
-
+/*
                 leaveProcessor.process(longWeekendsCalendar, date);
                 calendarDrawer.draw(longWeekendsCalendar, date);
+                */
             }
         });
     }
