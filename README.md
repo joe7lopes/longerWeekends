@@ -1,2 +1,2 @@
 # longerWeekends
-Android app to check when to go on Holidays
+Android app to check when to take holidays.
