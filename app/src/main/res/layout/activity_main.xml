@@ -30,30 +30,12 @@
                     android:text="Entitled Leaves" />
 
                 <EditText
+                    android:id="@+id/entitleLeavesText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="number"
-                    android:text="32"
                     android:textSize="@dimen/textSize" />
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Used Leaves" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:inputType="none"
-                    android:text="10"
-                    android:textSize="@dimen/textSize" />
             </LinearLayout>
 
             <LinearLayout
@@ -68,10 +50,10 @@
                     android:textStyle="italic" />
 
                 <EditText
+                    android:id="@+id/balanceText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="none"
-                    android:text="20"
                     android:textSize="@dimen/textSize"
                     android:textStyle="bold" />
 
@@ -96,10 +78,10 @@
                     android:text="Approved Leaves" />
 
                 <EditText
+                    android:id="@+id/approvedLeaveText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="none"
-                    android:text="30"
                     android:textSize="@dimen/textSize" />
             </LinearLayout>
 
@@ -114,48 +96,69 @@
                     android:text="Planned Leaves" />
 
                 <EditText
+                    android:id="@+id/plannedLeaveText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="none"
-                    android:text="88"
                     android:textSize="@dimen/textSize" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <!--TODO -->
-                <Button
-                    android:id="@+id/plannedLeave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minHeight="0dp"
-                    android:minWidth="0dp"
-                    android:onClick="updateListener"
-                    android:text="PL" />
-
-                <Button
-                    android:id="@+id/approvedLeave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minHeight="0dp"
-                    android:minWidth="0dp"
-                    android:onClick="updateListener"
-                    android:text="AL" />
-
-                <Button
-                    android:id="@+id/companyDayOff"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minHeight="0dp"
-                    android:minWidth="0dp"
-                    android:onClick="updateListener"
-                    android:text="C" />
-
-            </LinearLayout>
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="10dp"
+            android:onClick="updateListener"
+            android:text="Sct" />
+
+        <Button
+            android:id="@+id/approvedLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="10dp"
+            android:onClick="updateListener"
+            android:background="@color/colorGreen"
+            android:text="Approved" />
+
+        <Button
+            android:id="@+id/plannedLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="10dp"
+            android:onClick="updateListener"
+            android:background="@color/colorYellow"
+            android:text="Planned" />
+
+        <Button
+            android:id="@+id/companyDayOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:onClick="updateListener"
+            android:background="@color/colorMagenta"
+            android:text="Company" />
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:onClick="updateListener"
+            android:text="Remove" />
 
     </LinearLayout>
 

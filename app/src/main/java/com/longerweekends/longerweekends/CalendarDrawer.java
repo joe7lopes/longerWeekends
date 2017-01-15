@@ -1,10 +1,10 @@
 package com.longerweekends.longerweekends;
 
 
-import com.roomorama.caldroid.CaldroidFragment;
+import android.view.View;
 
 import java.util.Date;
 
 public interface CalendarDrawer {
-    void draw(CaldroidFragment caldroidFragment,Date date);
+    void draw(View view, Date date);
 }
