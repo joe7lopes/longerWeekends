@@ -1,7 +1,9 @@
 package com.longerweekends.longerweekends;
 
+import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,8 +21,9 @@ import static com.longerweekends.longerweekends.SelectionMode.SELECT;
 
 public class MainActivity extends AppCompatActivity implements MainView {
 
+
     private SelectionMode selectionMode = SELECT;
-    private LongWeekendsCalendar longWeekendsCalendar;
+    private LongWeekendsCalendar longWeekendsCalendar = new LongWeekendsCalendar();
 
     private EditText entitledLeavesTxt;
     private EditText balanceTxt;
@@ -28,12 +31,14 @@ public class MainActivity extends AppCompatActivity implements MainView {
     private EditText plannedLeavesTxt;
 
     private MainPresenter presenter;
+    private Storage storage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        presenter = new MainPresenterImpl(this);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        storage = new Storage(sharedPreferences);
         initializeHeader();
         buildCalendar();
     }
@@ -46,18 +51,33 @@ public class MainActivity extends AppCompatActivity implements MainView {
     }
 
     private void buildCalendar() {
-        longWeekendsCalendar = new LongWeekendsCalendar();
+        longWeekendsCalendar.setEntitledLeaves(storage.getEntitledLeaves());
+        longWeekendsCalendar.setApprovedLeaves(storage.getApprovedLeaves());
+        longWeekendsCalendar.setPlannedLeaves(storage.getPlannedLeaves());
         addListener();
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.calendar, longWeekendsCalendar);
         fragmentTransaction.commit();
+        refreshView();
     }
 
     private void addListener() {
         longWeekendsCalendar.setCaldroidListener(new CaldroidListener() {
             @Override
             public void onSelectDate(Date date, View view) {
-                presenter.onSelectDate(selectionMode, date, view);
+                if (selectionMode != SELECT) {
+                    removeSelection(date);
+                    if (selectionMode == AL) {
+                        addApprovedLeave(date);
+                    } else if (selectionMode == PL) {
+                        addPlannedLeave(date);
+                    } else if (selectionMode == C) {
+                        addCompanyLeave(date);
+                    } else if (selectionMode == REMOVE) {
+                        removeSelection(date);
+                    }
+                    refreshView();
+                }
             }
         });
     }
@@ -65,8 +85,8 @@ public class MainActivity extends AppCompatActivity implements MainView {
     private void updateHeader() {
         entitledLeavesTxt.setText(String.valueOf(longWeekendsCalendar.getEntitledLeaves()));
         balanceTxt.setText(String.valueOf(longWeekendsCalendar.getBalance()));
-        approvedLeavesTxt.setText(String.valueOf(longWeekendsCalendar.getApprovedLeaves()));
-        plannedLeavesTxt.setText(String.valueOf(longWeekendsCalendar.getPlannedLeaves()));
+        approvedLeavesTxt.setText(String.valueOf(longWeekendsCalendar.getApprovedLeavesCount()));
+        plannedLeavesTxt.setText(String.valueOf(longWeekendsCalendar.getPlannedLeavesCount()));
 
     }
 
@@ -87,12 +107,17 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
-//save
+        storage.save(longWeekendsCalendar);
     }
 
     @Override
     public void removeSelection(Date date) {
         longWeekendsCalendar.removeSelection(date);
+    }
+
+    @Override
+    public void addCompanyLeave(Date date) {
+        longWeekendsCalendar.setCompanyLeave(date);
     }
 
     @Override

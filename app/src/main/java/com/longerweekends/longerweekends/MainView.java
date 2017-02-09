@@ -8,6 +8,8 @@ public interface MainView {
 
     void removeSelection(Date date);
 
+    void addCompanyLeave(Date date);
+
     void addApprovedLeave(Date date);
 
     void addPlannedLeave(Date date);
